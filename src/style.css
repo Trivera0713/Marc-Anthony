@@ -1,0 +1,11 @@
+:root{
+--heading:font-family: 'Playfair Display SC', serif;
+--info:font-family: 'Roboto', sans-serif;
+}
+h1{
+  font-family: var(--heading);
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 170px;
+text-align: center;
+}
