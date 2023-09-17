@@ -2,10 +2,71 @@
 --heading:font-family: 'Playfair Display SC', serif;
 --info:font-family: 'Roboto', sans-serif;
 }
-h1{
+header{
+  background-image:linear-gradient(rgba(255, 255, 255, 0.2), rgba(0,0,0,0.6)),
+  
+  
+  url(images/marc.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position-y: 20% ;
+  color: white;
+  text-align: center;
+  padding:200px;
+ 
+}body{
+  background:linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.6));
+}
+
+ header h1{
   font-family: var(--heading);
   font-size: 128px;
   font-weight: 700;
-  line-height: 170px;
-text-align: center;
+  line-height:1;
+  margin: 0;
+}
+ header h2{
+  font-family: var(--info);
+  font-weight: 400;
+  font-size:40px;
+  line-height: 1;
+  margin: 0;
+
+}
+ header h3{
+  font-size: var(--info);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 5px;
+  margin: 0;
+}
+header a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px 32px;
+  background: white;
+  margin-top:32px;
+display: inline-block;
+  border-radius: 10px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width:800px){
+  header{
+    padding:60px,0;
+  }
+  header h1{
+    font-size: 64px;
+  } header h2{
+    font-size: 20px;
+  }
+  header h3{
+font-size: 12px;
+  }
 }
