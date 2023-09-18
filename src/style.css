@@ -73,6 +73,24 @@ main h3 {
   text-transform: uppercase;
   margin: 0;
 }
+main h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  margin: 0 auto;
+}
+main h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 8px;
+  margin: 0;
+}
 main p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -130,13 +148,20 @@ footer li {
   list-style: none;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px;
+}
+section h3,
+h2 {
+  color: white;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+.text-center {
+  text-align: center;
 }
 .grid {
   display: grid;
@@ -148,7 +173,46 @@ section {
   grid-template-columns: 1fr 1fr;
   grid-gap: 18px;
 }
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.info {
+  padding-left: 20px;
+}
+.secondary {
+  background: black;
+  background-image: linear-gradient(
+      360deg,
+      rgba(3, 5, 4, 0.9) 0%,
+      rgba(2, 4, 3, 0.7) 51.55%,
+      rgba(11, 6, 32, 0.6) 100%
+    ),
+    url(images/marc-4.jpg);
 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 10px 10px 40px 0px rgba(7, 5, 20, 0.2);
+  margin-top: 30px;
+}
+.card-body {
+  padding: 30px;
+}
+.card p {
+  padding: 24px, 32px, 0px, 32px;
+}
+
+.button {
+  display: block;
+  padding: 16px;
+  border-radius: 100px;
+  gap: 10px;
+}
 @media (max-width: 960px) {
   header {
     padding: 50px;
@@ -168,7 +232,7 @@ section {
     grid-gap: 32px;
   }
   main img {
-    width: 300px;
+    display: none;
   }
   main h1,
   main h2,
