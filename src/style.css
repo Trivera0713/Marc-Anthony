@@ -117,11 +117,12 @@ main img {
 }
 footer {
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(2, 4, 3, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 4, 3, 0.8)),
     url(images/marc-3.jpg);
   background-repeat: no-repeat;
+  background-position-y: 20%;
   background-size: cover;
-  padding: 100px 0;
+  padding: 20px 0;
 }
 footer h3 {
   font-family: "Playfair Display SC", serif;
@@ -139,13 +140,14 @@ footer p {
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
-  margin: 20px;
+  margin: 0px;
 }
 footer ul {
   padding: 0;
 }
 footer li {
   list-style: none;
+  padding-bottom: 10px;
 }
 section {
   max-width: 100%;
@@ -156,6 +158,9 @@ section h3,
 h2 {
   color: white;
 }
+span {
+  display: block;
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -165,8 +170,8 @@ h2 {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
 }
 .grid-2-columns {
   display: grid;
@@ -213,6 +218,17 @@ h2 {
   border-radius: 100px;
   gap: 10px;
 }
+.last h2 {
+  color: black;
+  padding-bottom: 30px;
+}
+.last h3 {
+  color: rgb(160, 0, 0);
+}
+.project-link {
+  text-align: center;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 50px;
