@@ -21,6 +21,7 @@ header h1 {
   font-weight: 700;
   line-height: 1;
   margin: 0;
+  text-shadow: red 9px 2px 9px;
 }
 header h2 {
   font-family: "Roboto", sans-serif;
@@ -185,7 +186,16 @@ span {
 }
 .info {
   padding-left: 20px;
+  color: black;
 }
+.info h2,
+.info h3 {
+  color: black;
+}
+.info h3 {
+  padding-left: 15px;
+}
+
 .secondary {
   background: black;
   background-image: linear-gradient(
@@ -211,6 +221,10 @@ span {
 .card p {
   padding: 24px, 32px, 0px, 32px;
 }
+.card-header iframe {
+  width: 100%;
+  height: 352px;
+}
 
 .button {
   display: block;
@@ -235,18 +249,16 @@ span {
   }
   header h1 {
     font-size: 64px;
+    text-shadow: red 4px 2px 9px;
   }
   header h2 {
     font-size: 20px;
+    margin: 10px;
   }
   header h3 {
     font-size: 12px;
   }
-  .grid,
-  .grid-2-columns {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-  }
+
   main img {
     display: none;
   }
@@ -255,23 +267,72 @@ span {
   main h3,
   main p {
     text-align: center;
+    padding: 15px;
+    margin: 0 auto;
   }
   main h2 {
     font-size: 30px;
     line-height: 32px;
   }
   main a {
-    margin-top: 20px;
+    margin: 20px 0;
     display: block;
-    margin-inline: 120px;
+    margin-inline: 100px;
   }
   section {
-    padding: 50px;
+    padding: 0px;
   }
   footer {
-    padding: 50px, 0;
     background-image: none;
     background-color: black;
     opacity: 50%;
+  }
+  footer h3,
+  footer p,
+  footer ul {
+    text-align: center;
+  }
+  footer div {
+    padding: 0 15px;
+  }
+  .container {
+    max-width: none;
+  }
+
+  .grid,
+  .grid-2-columns,
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .info {
+    padding: 0;
+  }
+  .card {
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    background-color: black;
+  }
+  .card-body {
+    padding: 15px;
+  }
+  .card-body h4,
+  .card-body h5,
+  .card-body p {
+    text-align: center;
+    color: white;
+  }
+  .card-header iframe {
+    height: 200px;
+  }
+  .last iframe {
+    height: 200px;
+  }
+  .project-link {
+    padding: 15px;
+  }
+  .secondary {
+    background-image: none;
   }
 }
